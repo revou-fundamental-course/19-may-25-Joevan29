@@ -28,7 +28,7 @@ Aplikasi web sederhana untuk mengonversi suhu antara **Celsius (°C)** dan **Fah
 1. Clone atau unduh repositori ini:
 
 ```bash
-git clone https://github.com/username/nama-repo.git
+git clone https://github.com/revou-fundamental-course/19-may-25-Joevan29.git
 ```
 
 2. Buka file `index.html` di browser favorit kamu:
