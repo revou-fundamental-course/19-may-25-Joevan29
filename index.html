@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalkulator Konversi Suhu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ Kalkulator Konversi Suhu</h1>
+    <p class="subtitle">Konversi antara Celsius (°C) dan Fahrenheit (°F)</p>
+
+    <form id="temperatureForm">
+      <div class="form-group">
+        <label for="inputTemp">Masukkan Suhu:</label>
+        <input type="number" id="inputTemp" placeholder="Contoh: 90" required />
+      </div>
+
+      <div class="form-group">
+        <label for="conversionType">Jenis Konversi:</label>
+        <select id="conversionType">
+          <option value="toFahrenheit">Celsius ke Fahrenheit 🔥</option>
+          <option value="toCelsius">Fahrenheit ke Celsius ❄️</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button type="submit">Konversi</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="reverseBtn">Tukar Arah 🔁</button>
+      </div>
+    </form>
+
+    <div id="output">
+      <div id="result" class="card hidden"></div>
+      <div id="explanation" class="explanation hidden"></div>
+    </div>
+
+    <div class="history">
+      <h3>Riwayat Konversi</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div class="conversion-info">
+      <h2>📘 Cara Konversi</h2>
+      <p>Untuk mengubah suhu:</p>
+      <ul>
+        <li><strong>Celsius ke Fahrenheit:</strong> <br> <code>S(°F) = (S(°C) × 9/5) + 32</code></li>
+        <li><strong>Fahrenheit ke Celsius:</strong> <br> <code>S(°C) = (S(°F) - 32) × 5/9</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
